@@ -1,5 +1,5 @@
 /* importamos las fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,600;1,700&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,200&family=Yellowtail&display=swap');
 
 * {
     font-family: "Titillium web";
@@ -55,7 +55,7 @@ html {
     font-weight: bold;
 }
 
-/* ********** */
+/* ********** logo D*  */
 .inicio .contenido-seccion header .logo {
     font-weight: bold;
     font-size: 2.5rem;
@@ -63,6 +63,7 @@ html {
     text-shadow: 0 0 35px #fff;
 }
 
+/* ********** logo D* color  */
 .inicio .contenido-seccion header .logo .color {
     color: #fff;
     font-family: "Yellowtail";
@@ -91,12 +92,12 @@ html {
     padding-bottom: 130px;
 }
 
-h1 {
+.inicio .contenido-seccion .info h1 {
     font-size: 3rem;
     letter-spacing: 5px;
 }
 
-h2 {
+.inicio .contenido-seccion .info h2 {
     font-weight: normal;
     font-size: 30px;
     margin-top: -10px;
@@ -128,7 +129,7 @@ h2 {
     position: relative;
 }
 
-/*debo cambiar foto imagen*/
+/*Foto imagen*/
 .inicio .contenido-seccion .foto img {
     max-width: 200px;
     border-radius: 50%;
@@ -140,12 +141,14 @@ h2 {
     transform: translateX(-50%);
 }
 
+/*---------A)sigo de acá--------------------*/
 /*ESTILOS GENERALES*/
 .titulo-seccion {
     font-family: "Yellowtail";
     font-size: 1.5rem;
 }
 
+/*------------------------------------------*/
 /*SECCION SOBRE MI*/
 .sobremi {
     background-color: #e6e6e6;
@@ -170,16 +173,17 @@ h2 {
 .sobremi .contenido-seccion .especial {
     color: #940253;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 17px;
 }
 
 .sobremi .contenido-seccion p {
     max-width: 780px;
     margin: auto;
-    color: #666;
+    color: #202020;
+    font-size: 17px;
 }
 
-
+/*esqueleto*/
 .sobremi .contenido-seccion .fila {
     display: flex;
     margin-top: 30px;
@@ -191,7 +195,7 @@ h2 {
 }
 
 /*EN ESTE SEGMENTO SE MODIFICAN LAS COLUMNAS , SI SIGUE ELIMINAR*/
-/*.sobremi .contenido-seccion .fila .col {
+.sobremi .contenido-seccion .fila .col i {
     color: #940253;
     display: inline-block;
     width: 40px;
@@ -199,8 +203,9 @@ h2 {
     border: 2px solid #940253;
     line-height: 40px;
     border-radius: 50%;
-}*/
+}
 
+/*sigo desde acá minuto 29.05---*****----------------*/
 .sobremi .contenido-seccion .fila .col span {
     display: block;
     font-weight: bold;
@@ -250,6 +255,7 @@ h2 {
     display: flex;
     border: 1px solid #940253;
     padding: 3px;
+    border-radius: 3px;
     margin-right: 10px;
 }
 
@@ -261,7 +267,7 @@ h2 {
 
 }
 
-/*SECCION RESUMEN*/
+/*SECCION RESUMEN*, sector que debo evaluar como centrar.*/
 .resumen {
     background-color: #e6e6e6;
     padding: 140px 0 100px 0;
@@ -276,8 +282,8 @@ h2 {
 
 .resumen .contenido-seccion h3 {
     text-transform: uppercase;
-    font-size: 15px;
-    /*BAJE DE 30PX A 20PX DE EL ORIGINAL.PROBAR CAMBIAR LUEGO*/
+    font-size: 30px;
+    /*cambio de 30 a 15, negativo*/
 }
 
 .resumen .contenido-seccion .info {
@@ -314,10 +320,11 @@ h2 {
 }
 
 .resumen .contenido-seccion .info .col table h3 {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 5px;
 }
 
+/*cambio de 20 a 10*/
 .resumen .contenido-seccion .info .col table p {
     font-size: 14px;
 }
@@ -332,7 +339,8 @@ h2 {
 
 .resumen .contenido-seccion .info .col table .descripcion {
     border-left: 1px solid #bab9b9;
-    padding-left: 20px;
+    padding-left: 10px;
+    /*cambio de 20px a 10px*/
 }
 
 /* SECCION CONTACTO*/
@@ -351,7 +359,6 @@ h2 {
 }
 
 .contacto .contenido-seccion h3 {
-    color: #940253;
     text-transform: uppercase;
     font-size: 30px;
 }
@@ -366,10 +373,10 @@ h2 {
     margin-top: 50px;
 }
 
-/*color iconos contactos se pierde */
-/*.contacto .contenido-seccion .fila .col h2 {
+.contacto .contenido-seccion .fila .col h2 {
     color: #940253;
-}*/
+}
+
 /* continuo 53.13*/
 
 /* SECCION RESPONSIVE*/

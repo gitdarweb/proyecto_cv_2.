@@ -11,7 +11,7 @@ function mostrarOcultarMenu() {
         menu_visible = false;
     }
 }
-//oculto menuluego de seleccionar opcion
+//oculto menu luego de seleccionar opcion
 let links = document.querySelectorAll("nav a");
 for (var x = 0; x < links.length; x++) {
     links[x].onclick = function () {
@@ -33,12 +33,12 @@ let html = document.getElementById("html");
 crearBarra(html);
 let javascipt = document.getElementById("javascript");
 crearBarra(javascipt);
-let wordpress = document.getElementById("wordpress");
-crearBarra(wordpress);
-let photoshop = document.getElementById("photoshop");
-crearBarra(photoshop);
+let python = document.getElementById("python");
+crearBarra(python);
 let pascal = document.getElementById("pascal");
 crearBarra(pascal);
+let gobstones = document.getElementById("gobstones");
+crearBarra(gobstones);
 let rubi = document.getElementById("rubi");
 crearBarra(rubi);
 
@@ -60,14 +60,14 @@ function efectoHabilidades() {
         const intervalJavascript = setInterval(function () {
             pintarBarra(javascipt, 11, 1, intervalJavascript);
         }, 100);
-        const intervalWordpress = setInterval(function () {
-            pintarBarra(wordpress, 16, 0, intervalWordpress);
-        }, 100);
-        const intervalPhotoshop = setInterval(function () {
-            pintarBarra(photoshop, 15, 3, intervalPhotoshop);
+        const intervalPython = setInterval(function () {
+            pintarBarra(python, 11, 2, intervalPython);
         }, 100);
         const intervalPascal = setInterval(function () {
-            pintarBarra(pascal, 16, 4, intervalPascal);
+            pintarBarra(pascal, 15, 3, intervalPascal);
+        }, 100);
+        const intervalGobstones = setInterval(function () {
+            pintarBarra(gobstones, 16, 4, intervalGobstones);
         }, 100);
         const intervalRubi = setInterval(function () {
             pintarBarra(rubi, 11, 5, intervalRubi);
@@ -79,7 +79,7 @@ function efectoHabilidades() {
 function pintarBarra(id_barra, cantidad, indice, interval) {
     contadores[indice]++;
     x = contadores[indice];
-    if (X < cantidad) {
+    if (x < cantidad) {
         let elementos = id_barra.getElementsByClassName("e");
         elementos[x].style.backgroundColor = "#940253";
     } else {
